@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.yunfangdata.fgg.ui.ScheduleActivity">
+
+
+    <include
+        android:id="@+id/nav_title"
+        layout="@layout/include_head_sub_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/scd_ll_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@color/black20"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buy_item_hight">
+
+
+            <EditText
+                android:id="@+id/scd_number"
+                style="@style/Buy_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/scd_number"
+                android:inputType="number"
+                android:maxLength="12"
+                />
+
+            <ImageView
+                android:id="@+id/scd_number_warning"
+                style="@style/Buy_Waning_Img"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_20"
+                android:src="@mipmap/buy_warning"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/black20"/>
+
+        <Button
+            android:id="@+id/scd_button_query"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_margin="@dimen/margin_20"
+            android:background="@drawable/button_selector_bule"
+            android:text="@string/scd_button_query"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/scd_include_result"
+        layout="@layout/activity_schedule_result"
+        />
+
+</LinearLayout>

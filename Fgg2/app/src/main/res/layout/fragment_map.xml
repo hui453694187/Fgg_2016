@@ -1,0 +1,239 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yunfangdata.fgg.ui.MapFragment">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/baidu_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"/>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/house_info_relative"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            app:layout_heightPercent="25%h">
+
+            <ImageView
+                android:id="@+id/title_img"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/Description"
+                android:scaleType="fitXY"
+                android:src="@drawable/untitled_big"
+                app:layout_paddingPercent="2%w"
+                app:layout_widthPercent="100%h" />
+
+            <LinearLayout
+                android:layout_toEndOf="@id/title_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/garden_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center|bottom|left"
+                    android:textColor="@color/black"
+                    android:text="@string/Description"
+                    android:textSize="@dimen/Title" />
+
+                <TextView
+                    android:id="@+id/address_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="@string/price_hint"
+                    android:textSize="@dimen/Caption" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/unit_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="@dimen/drawable_padding"
+                        android:text="@string/map_item_view_unit_price"
+                        android:textSize="@dimen/Caption" />
+
+                    <TextView
+                        android:id="@+id/unit_price_number_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:text="@string/Description"
+                        android:textSize="@dimen/Caption" />
+
+                    <TextView
+                        android:id="@+id/unit_price_number_unit_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:textColor="@color/black"
+                        android:text="@string/hd_m_pingfang"
+                        android:textSize="@dimen/Caption" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/year_on_year_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:textColor="@color/black"
+                        android:text="@string/map_item_view_year_on_year"
+                        android:textSize="@dimen/Caption" />
+
+                    <TextView
+                        android:id="@+id/year_on_year_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:drawablePadding="@dimen/drawable_padding"
+                        android:text="@string/Description"
+                        android:textSize="@dimen/Caption" />
+
+                    <ImageView
+                        android:id="@+id/year_on_year_img"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:src="@drawable/sj_1"/>
+
+                    <TextView
+                        android:id="@+id/qoq_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:textColor="@color/black"
+                        android:text="@string/map_item_view_QOQ"
+                        android:textSize="@dimen/Caption" />
+
+                    <TextView
+                        android:id="@+id/qoq_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:drawablePadding="@dimen/drawable_padding"
+                        android:text="@string/Description"
+                        android:textSize="@dimen/Caption" />
+
+                    <ImageView
+                        android:id="@+id/qoq_price_img"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:src="@drawable/sj_1"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/max_area_linea"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:text="@string/map_item_view_max_area"
+                        android:textSize="@dimen/Caption" />
+
+                    <TextView
+                        android:id="@+id/max_area_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:text="@string/map_item_view_area_unit"
+                        android:textSize="@dimen/Caption"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:text="@string/map_item_view_rent_price"
+                        android:textSize="@dimen/Caption" />
+
+                    <TextView
+                        android:id="@+id/rent_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:text="@string/hd_yuen_month"
+                        android:textSize="@dimen/Caption"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/list_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_above="@id/house_info_relative"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/drawable_padding"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/list"
+            android:gravity="center"
+            android:padding="@dimen/drawable_padding"
+            android:text="@string/map_list"
+            app:layout_heightPercent="9%w" />
+
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_above="@id/list_tv"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/drawable_padding"
+            android:layout_marginRight="@dimen/drawable_padding"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/location"
+            android:gravity="center"
+            android:padding="@dimen/drawable_padding"
+            android:text="@string/map_location"
+            app:layout_heightPercent="9%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yunfangdata.fgg.ui.HypocrisyQueryActivity">
+
+
+    <include
+        android:id="@+id/nav_title"
+        layout="@layout/include_head_sub_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+    <include
+        android:id="@+id/activity_hypocrisy_query_base"
+        layout="@layout/activity_hypocrisy_query_base"/>
+    <include
+        android:id="@+id/activity_hypocrisy_query_warning"
+        layout="@layout/activity_hypocrisy_query_warning"/>
+    <include
+        android:id="@+id/activity_hypocrisy_query_result"
+        layout="@layout/activity_hypocrisy_query_result"/>
+</LinearLayout>

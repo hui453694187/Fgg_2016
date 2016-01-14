@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RadioGroup
+        android:id="@+id/search_bar_rdg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_heightPercent="19.36%h">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/area_rdb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawablePadding="0dp"
+                android:gravity="center"
+                android:text="@string/home_filtrate_area"
+                android:textColor="@color/color_radiobutton"
+                android:textSize="@dimen/Body2" />
+
+            <ImageView
+                android:layout_marginLeft="6dp"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:src="@drawable/radiobutton_drawable" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/house_rdb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/home_filtrate_house_type"
+                android:textColor="@color/color_radiobutton"
+                android:textSize="@dimen/Body2" />
+
+            <ImageView
+                android:layout_marginLeft="6dp"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:src="@drawable/radiobutton_drawable" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/price_rdb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/home_filtrate_price"
+                android:textColor="@color/color_radiobutton"
+                android:textSize="@dimen/Body2" />
+
+
+            <ImageView
+                android:layout_marginLeft="6dp"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:src="@drawable/radiobutton_drawable" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/school_rdb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/home_filtrate_school"
+                android:textColor="@color/color_radiobutton"
+                android:textSize="@dimen/Body2" />
+
+            <ImageView
+                android:layout_marginLeft="6dp"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:src="@drawable/radiobutton_drawable" />
+        </LinearLayout>
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_bar_rdg"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <ListView
+            android:id="@+id/column_one_lv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ListView
+            android:id="@+id/column_two_lv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/column_three_lv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/price_edt_linear"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/itemHeight"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/price_det"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="60%h"
+                android:layout_weight="3"
+                android:hint="@string/price_hint"
+                android:background="@drawable/juxing_yuangjiao_edt"
+                android:textCursorDrawable="@null"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/Body2" />
+
+            <Button
+                android:id="@+id/price_confirm_but"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/drawable_padding"
+                app:layout_heightPercent="60%h"
+                android:background="@drawable/button_selector_bule"
+                android:text="@string/confirm" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </LinearLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

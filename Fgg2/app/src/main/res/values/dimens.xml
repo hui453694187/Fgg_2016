@@ -1,0 +1,62 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="drawable_padding">8dp</dimen>
+
+    <!-- 首页-->
+    <dimen name="itemHeight">60dp</dimen>
+    <dimen name="SideItemHeight">200dp</dimen>
+
+    <dimen name="icon_size">25dp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="Button">15sp</dimen>
+    <dimen name="Caption">13sp</dimen>
+    <dimen name="Body1">15sp</dimen>
+    <dimen name="Body2">17sp</dimen>
+    <dimen name="Title">21sp</dimen>
+    <dimen name="Headline">24sp</dimen>
+    <dimen name="Display1">34sp</dimen>
+    <dimen name="Display2">45sp</dimen>
+    <dimen name="Display3">56sp</dimen>
+    <dimen name="Display4">112sp</dimen>
+    <dimen name="side_menu_width">100dp</dimen>
+    <!--房子详情-->
+    <dimen name="hd_house_name">21sp</dimen>
+    <dimen name="hd_house_normal">16sp</dimen>
+    <dimen name="hd_house_margintop">10dp</dimen>
+    <dimen name="hd_house_marginLeft">10dp</dimen>
+    <dimen name="hd_around_text_marginLeft">10dp</dimen>
+    <dimen name="hd_star_size">20dp</dimen>
+
+    <!--我要买房-->
+    <dimen name="buy_titel_hight">55dp</dimen>
+    <dimen name="buy_margin">10dp</dimen>
+    <dimen name="buy_titel_height">40dp</dimen>
+    <dimen name="buy_titel_text_size">20sp</dimen>
+    <dimen name="buy_margin_small">5dp</dimen>
+    <dimen name="buy_base_hight">40dp</dimen>
+    <dimen name="buy_item_hight">50dp</dimen>
+    <dimen name="buy_left_text_width">70dp</dimen>
+    <dimen name="buy_numal_text_size">14sp</dimen>
+    <dimen name="buy_panding_small">3dp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="schedu_item_width">280dp</dimen>
+    <dimen name="schedu_item_height">55dp</dimen>
+    <dimen name="register_type_size">20sp</dimen>
+    <dimen name="el_text_size">14sp</dimen>
+    <dimen name="el_bellow_line">1dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+
+
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yunfangdata.fgg.ui.RegisterAndLoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buy_item_hight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/rl_regiert_imge"
+                android:src="@mipmap/rl_hear"/>
+
+            <EditText
+                android:id="@+id/rl_sms_register_name"
+                style="@style/rl_EditText"
+                android:hint="@string/rl_sms_register_name"
+                android:inputType="phone"
+                android:maxLength="11"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/rl_sms_register_name_clean"
+            style="@style/rl_clean_imge"
+            android:src="@mipmap/rl_clean_number"/>
+
+        <View style="@style/rl_line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buy_item_hight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/rl_regiert_imge"
+                android:src="@mipmap/rl_lock"/>
+
+            <EditText
+                android:id="@+id/rl_sms_register_verification"
+                style="@style/rl_EditText"
+                android:layout_marginRight="140dp"
+                android:hint="@string/rl_sms_register_verification"
+                android:inputType="number"
+                android:maxLength="4"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/rl_sms_register_register_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@drawable/juxing_zhijiao_white"
+            android:paddingBottom="6dp"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingTop="6dp"
+            android:text="1100"
+            android:textColor="@color/schedule_yellow"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/rl_sms_register_verification_clean"
+            style="@style/rl_clean_imge"
+            android:layout_marginRight="110dp"
+            android:src="@mipmap/rl_clean_number"/>
+
+        <View style="@style/rl_line"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_sms_register_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buy_item_hight">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/rl_regiert_imge"
+                    android:src="@mipmap/rl_lock"/>
+
+                <EditText
+                    android:id="@+id/rl_sms_register_verification_phone"
+                    style="@style/rl_EditText"
+                    android:layout_marginRight="140dp"
+                    android:hint="@string/rl_sms_register_verification_phone"
+                    android:inputType="number"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/rl_sms_register_verification_phone_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_selector_bule"
+                android:paddingBottom="6dp"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingRight="@dimen/margin_10"
+                android:paddingTop="6dp"
+                android:text="@string/rl_sms_login_verification_phone_get"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14"/>
+
+            <ImageView
+                android:id="@+id/rl_sms_register_verification_phone_clean"
+                style="@style/rl_clean_imge"
+                android:layout_marginRight="120dp"
+                android:src="@mipmap/rl_clean_number"/>
+
+            <View style="@style/rl_line"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buy_item_hight">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/rl_regiert_imge"
+                    android:src="@mipmap/rl_lock"/>
+
+                <EditText
+                    android:id="@+id/rl_sms_register_first_psw"
+                    style="@style/rl_EditText"
+                    android:layout_marginRight="@dimen/margin_40"
+                    android:hint="@string/rl_sms_register_first_psw"
+                    android:inputType="textPassword"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/rl_sms_register_first_psw_clean"
+                style="@style/rl_clean_imge"
+                android:src="@mipmap/rl_clean_number"/>
+
+            <View style="@style/rl_line"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buy_item_hight">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/rl_regiert_imge"
+                    android:src="@mipmap/rl_lock"/>
+
+                <EditText
+                    android:id="@+id/rl_sms_register_second_psw"
+                    style="@style/rl_EditText"
+                    android:layout_marginRight="@dimen/margin_40"
+                    android:hint="@string/rl_sms_register_second_psw"
+                    android:inputType="textPassword"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/rl_sms_register_second_psw_clean"
+                style="@style/rl_clean_imge"
+                android:src="@mipmap/rl_clean_number"/>
+
+            <View style="@style/rl_line"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rl_sms_register_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:layout_margin="@dimen/margin_40"
+        android:background="@drawable/button_selector_bule"
+        android:text="@string/rl_sms_register_button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        />
+</LinearLayout>

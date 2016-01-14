@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/nav_title"
+        layout="@layout/include_head_sub_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buy_item_hight">
+        <View style="@style/rl_line_top"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/pbm_ed_email"
+                style="@style/Buy_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/pbm_ed_email"
+                android:inputType="textEmailAddress"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/pbm_ed_email_warning"
+            style="@style/Buy_Waning_Img"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_20"
+            android:src="@mipmap/buy_warning"/>
+
+        <View style="@style/rl_line"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/pbm_bt_binding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:layout_margin="@dimen/margin_40"
+        android:background="@drawable/button_selector_bule"
+        android:text="@string/pbm_bt_binding"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        />
+
+
+</LinearLayout>

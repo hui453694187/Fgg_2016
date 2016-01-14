@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/buy_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/nav_title"
+        layout="@layout/include_head_sub_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/person_contacts_lv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/buy_background"
+            android:dividerHeight="1dp"
+            android:fadeScrollbars="false"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:focusable="true"
+            android:listSelector="@color/buy_background"
+            android:scrollbarFadeDuration="0"
+            android:scrollingCache="false"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/person_contacts_btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/buy_background"
+            android:text="新增联系人"
+            android:textColor="@color/button_normal" />
+
+        <Button
+            android:id="@+id/person_contacts_btn_edit"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/buy_background"
+            android:text="修改"
+            android:textColor="@color/button_normal" />
+
+        <Button
+            android:id="@+id/person_contacts_btn_default"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/buy_background"
+            android:text="设置为默认"
+            android:textColor="@color/button_normal" />
+
+        <Button
+            android:id="@+id/person_contacts_btn_delete"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/buy_background"
+            android:text="删除"
+            android:textColor="@color/button_normal" />
+
+    </LinearLayout>
+
+</LinearLayout>

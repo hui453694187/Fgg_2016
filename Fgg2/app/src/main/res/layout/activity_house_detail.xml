@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yunfangdata.fgg.ui.HouseDetailActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/hd_top_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/hd_defoult_fgg"
+                />
+
+            <TextView
+                android:id="@+id/hd_house_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:layout_marginTop="@dimen/hd_house_margintop"
+                android:textColor="@color/black"
+                android:textSize="@dimen/hd_house_name"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:layout_marginTop="@dimen/hd_house_margintop"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hd_house_districtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blackBB"
+                    android:textSize="@dimen/hd_house_normal"/>
+
+                <TextView
+                    android:id="@+id/hd_house_ResidentialAreaName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                    android:textColor="@color/blackBB"
+                    android:textSize="@dimen/hd_house_normal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:layout_marginTop="@dimen/hd_house_margintop">
+
+                <ImageView
+                    android:id="@+id/hd_star_imageView1"
+                    android:layout_width="@dimen/hd_star_size"
+                    android:layout_height="@dimen/hd_star_size"
+                    android:src="@mipmap/hd_loved"
+                    />
+
+                <ImageView
+                    android:id="@+id/hd_star_imageView2"
+                    android:layout_width="@dimen/hd_star_size"
+                    android:layout_height="@dimen/hd_star_size"
+                    android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                    android:src="@mipmap/hd_loved"
+                    />
+
+                <ImageView
+                    android:id="@+id/hd_star_imageView3"
+                    android:layout_width="@dimen/hd_star_size"
+                    android:layout_height="@dimen/hd_star_size"
+                    android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                    android:src="@mipmap/hd_loving"
+                    />
+
+                <ImageView
+                    android:id="@+id/hd_star_imageView4"
+                    android:layout_width="@dimen/hd_star_size"
+                    android:layout_height="@dimen/hd_star_size"
+                    android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                    android:src="@mipmap/hd_unlove"
+                    />
+
+                <ImageView
+                    android:id="@+id/hd_star_imageView5"
+                    android:layout_width="@dimen/hd_star_size"
+                    android:layout_height="@dimen/hd_star_size"
+                    android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                    android:src="@mipmap/hd_unlove"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:layout_marginTop="@dimen/hd_house_margintop"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hd_UnitPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hd_UnitPrice"
+                    android:textColor="@color/blackBB"
+                    android:textSize="@dimen/hd_house_normal"/>
+
+                <TextView
+                    android:id="@+id/hd_UnitPrice_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/hd_house_normal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:layout_marginTop="@dimen/hd_house_margintop"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hd_MonthForRent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hd_MonthForRent"
+                    android:textColor="@color/blackBB"
+                    android:textSize="@dimen/hd_house_normal"/>
+                s
+
+                <TextView
+                    android:id="@+id/hd_MonthForRent_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/hd_house_normal"/>
+
+                <ImageView
+                    android:id="@+id/hd_MonthForRent_imageView"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                    android:src="@mipmap/hd_rent_down"
+                    />
+
+                <TextView
+                    android:id="@+id/hd_YearForPrice"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                    android:text="@string/hd_YearForPrice"
+                    android:textColor="@color/blackBB"
+                    android:textSize="@dimen/hd_house_normal"/>
+
+                <TextView
+                    android:id="@+id/hd_YearForPrice_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/hd_house_normal"/>
+
+                <ImageView
+                    android:id="@+id/hd_YearForPrice_imageView"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                    android:src="@mipmap/hd_rent_up"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:layout_marginTop="@dimen/hd_house_margintop"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hd_RentPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hd_RentPrice"
+                    android:textColor="@color/blackBB"
+                    android:textSize="@dimen/hd_house_normal"/>
+
+                <TextView
+                    android:id="@+id/hd_RentPrice_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/hd_house_normal"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/hd_around_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:layout_marginTop="@dimen/hd_house_margintop"
+                android:text="@string/hd_around_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/hd_house_name"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/hd_house_margintop"
+                android:background="@color/black20"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/hd_house_marginLeft">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/hd_house_margintop"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/hd_star_size"
+                        android:layout_height="@dimen/hd_star_size"
+                        android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                        android:gravity="top"
+                        android:src="@mipmap/hd_around_left"
+                        />
+
+                    <TextView
+                        android:id="@+id/hd_around_school_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hd_around_text_marginLeft"
+                        android:gravity="top"
+                        android:text="@string/hd_around_school_name"
+                        android:textColor="@color/blackBB"
+                        android:textSize="@dimen/hd_house_normal"/>
+
+                    <TextView
+                        android:id="@+id/hd_around_school_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hd_around_text_marginLeft"
+                        android:gravity="top"
+                        android:textColor="@color/blackBB"
+                        android:textSize="@dimen/hd_house_normal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hd_house_margintop"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/hd_star_size"
+                        android:layout_height="@dimen/hd_star_size"
+                        android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                        android:gravity="top"
+                        android:src="@mipmap/hd_around_left"
+                        />
+
+                    <TextView
+                        android:id="@+id/hd_around_hospital_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hd_around_text_marginLeft"
+                        android:gravity="top"
+                        android:text="@string/hd_around_hospital_name"
+                        android:textColor="@color/blackBB"
+                        android:textSize="@dimen/hd_house_normal"/>
+
+                    <TextView
+                        android:id="@+id/hd_around_hospital_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hd_around_text_marginLeft"
+                        android:gravity="top"
+                        android:textColor="@color/blackBB"
+                        android:textSize="@dimen/hd_house_normal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hd_house_margintop"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/hd_star_size"
+                        android:layout_height="@dimen/hd_star_size"
+                        android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                        android:gravity="top"
+                        android:src="@mipmap/hd_around_left"
+                        />
+
+                    <TextView
+                        android:id="@+id/hd_around_Supermarket_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hd_around_text_marginLeft"
+                        android:gravity="top"
+                        android:text="@string/hd_around_Supermarket_name"
+                        android:textColor="@color/blackBB"
+                        android:textSize="@dimen/hd_house_normal"/>
+
+                    <TextView
+                        android:id="@+id/hd_around_Supermarket_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hd_around_text_marginLeft"
+                        android:gravity="top"
+                        android:textColor="@color/blackBB"
+                        android:textSize="@dimen/hd_house_normal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hd_house_margintop"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/hd_star_size"
+                        android:layout_height="@dimen/hd_star_size"
+                        android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                        android:gravity="top"
+                        android:src="@mipmap/hd_around_left"
+                        />
+
+                    <TextView
+                        android:id="@+id/hd_around_bank_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hd_around_text_marginLeft"
+                        android:gravity="top"
+                        android:text="@string/hd_around_bank_name"
+                        android:textColor="@color/blackBB"
+                        android:textSize="@dimen/hd_house_normal"/>
+
+                    <TextView
+                        android:id="@+id/hd_around_bank_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hd_around_text_marginLeft"
+                        android:gravity="top"
+                        android:textColor="@color/blackBB"
+                        android:textSize="@dimen/hd_house_normal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hd_house_margintop"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/hd_star_size"
+                        android:layout_height="@dimen/hd_star_size"
+                        android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                        android:gravity="top"
+                        android:src="@mipmap/hd_around_left"
+                        />
+
+                    <TextView
+                        android:id="@+id/hd_around_bus_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hd_around_text_marginLeft"
+                        android:gravity="top"
+                        android:text="@string/hd_around_bus_name"
+                        android:textColor="@color/blackBB"
+                        android:textSize="@dimen/hd_house_normal"/>
+
+                    <TextView
+                        android:id="@+id/hd_around_bus_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hd_around_text_marginLeft"
+                        android:gravity="top"
+                        android:textColor="@color/blackBB"
+                        android:textSize="@dimen/hd_house_normal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hd_house_margintop"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/hd_house_margintop"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/hd_star_size"
+                        android:layout_height="@dimen/hd_star_size"
+                        android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                        android:gravity="top"
+                        android:src="@mipmap/hd_around_left"
+                        />
+
+                    <TextView
+                        android:id="@+id/hd_around_metro_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hd_around_text_marginLeft"
+                        android:gravity="top"
+                        android:text="@string/hd_around_metro_name"
+                        android:textColor="@color/blackBB"
+                        android:textSize="@dimen/hd_house_normal"/>
+
+                    <TextView
+                        android:id="@+id/hd_around_metro_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hd_around_text_marginLeft"
+                        android:gravity="top"
+                        android:textColor="@color/blackBB"
+                        android:textSize="@dimen/hd_house_normal"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hd_tips_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:layout_marginTop="@dimen/hd_house_margintop"
+                android:gravity="center"
+                android:text="@string/hd_tips_tv"
+                android:textColor="@color/red"
+                android:textSize="@dimen/hd_house_normal"/>
+
+            <Button
+                android:layout_marginTop="@dimen/margin_20"
+                android:id="@+id/hd_bt_buy_values"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:layout_marginRight="@dimen/hd_house_marginLeft"
+                android:background="@drawable/button_selector_bule"
+                android:text="@string/hd_bt_buy_values"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16"
+                />
+
+            <Button
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_20"
+                android:id="@+id/hd_bt_sell_values"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:layout_marginRight="@dimen/hd_house_marginLeft"
+                android:background="@drawable/button_selector_bule"
+                android:text="@string/hd_bt_sell_values"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/hd_button_back"
+        android:layout_width="@dimen/buy_titel_height"
+        android:layout_height="@dimen/buy_titel_height"
+        android:layout_marginLeft="@dimen/hd_house_margintop"
+        android:layout_marginTop="@dimen/hd_house_margintop"
+        android:src="@mipmap/hd_button_back"/>
+
+</RelativeLayout>

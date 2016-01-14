@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yunfangdata.fgg.ui.RegisterAndLoginActivity">
+
+
+    <include
+        android:id="@+id/nav_title"
+        layout="@layout/include_head_sub_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/activity_register_and_login_all_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_pass_login_relativeLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="密码登录"
+                    android:textColor="@color/title_blue"
+                    android:textSize="@dimen/register_type_size"/>
+
+                <View
+                    android:id="@+id/rl_pass_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/title_blue"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sms_login_relativeLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="短信登录"
+                    android:textColor="@color/title_blue"
+                    android:textSize="@dimen/register_type_size"/>
+
+                <View
+                    android:id="@+id/rl_sms_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/title_blue"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/activity_register_and_login_password_login"
+            layout="@layout/activity_register_and_login_password_login"/>
+
+        <include
+            android:id="@+id/activity_register_and_login_sms_login"
+            layout="@layout/activity_register_and_login_sms_login"/>
+
+
+        <Button
+            android:id="@+id/rl_bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_40"
+            android:layout_marginRight="@dimen/margin_40"
+            android:layout_marginTop="@dimen/margin_40"
+            android:background="@drawable/button_selector_bule"
+            android:text="@string/rl_bt_login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/rl_new_register"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/rl_new_register"
+                android:textColor="@color/blackBB"
+                android:textSize="@dimen/text_size_14"/>
+
+
+            <TextView
+                android:id="@+id/rl_forget_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/rl_forget_password"
+                android:textColor="@color/blackBB"
+                android:textSize="@dimen/text_size_14"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/activity_register_and_login_sms_register"
+        layout="@layout/activity_register_and_login_sms_register"/>
+    <include
+        android:id="@+id/activity_register_and_login_forget_psw"
+        layout="@layout/activity_register_and_login_forget_psw"/>
+
+
+</LinearLayout>

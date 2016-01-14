@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="side_item_name">
+        <item>会员登录</item>
+        <item>功能列表</item>
+        <item>买房估值</item>
+        <item>卖房估值</item>
+        <item>进度查询</item>
+        <item>真伪查询</item>
+        <item>设置</item>
+        <item>以下功能需要登录后使用</item>
+        <item>委托评估</item>
+        <item>委托记录</item>
+        <item>个人中心</item>
+    </string-array>
+
+</resources>

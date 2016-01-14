@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yunfangdata.fgg"
+    android:versionCode="1201"
+    android:versionName="00.00.0056" >
+
+    <!-- 百度地图需要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".base.FggApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/fgg_icon_new"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="wxk15FXkOAggqiSQGghHBkLg" />
+        <!--
+            百度地图key:
+            正式版：qNukNUGjAGwKwkMvThuABzs2
+            kevin:wxk15FXkOAggqiSQGghHBkLg
+            zjt :	aLkRP5i9gQQmwwaLkNkP11KC  // ux86sReon5lCF7j1TsxKYHgW
+        -->
+        <activity android:name=".ui.HomeActivity" >
+
+        </activity>
+        <activity android:name=".ui.PersonActivity" />
+        <!-- 房子详情-->
+        <activity android:name=".ui.HouseDetailActivity" />
+       <!-- 买房估值-->
+        <activity android:name=".ui.BuyHouseActivity" />
+        <!-- 卖房估值-->
+        <activity android:name=".ui.SaleHouseActivity" />
+        <activity android:name=".ui.ScheduleActivity" />
+        <activity android:name=".ui.HypocrisyQueryActivity" />
+        <activity android:name=".ui.ValuationWebViewActivity" />
+        <!--注册 登录 -->
+        <activity android:name=".ui.RegisterAndLoginActivity" />
+        <!-- 个人中心 个人资料 -->
+        <activity android:name=".ui.PersonDataActivity" />
+        <!-- 个人中心 消息中心 -->
+        <activity android:name=".ui.PersonMessageActivity" />
+        <!-- 个人中心 消息中心 详情 -->
+        <activity android:name=".ui.PersonMessageDetailsActivity" />
+        <!-- 个人中心 看房联系人 -->
+        <activity android:name=".ui.PersonContactsActivity" />
+        <!-- 个人中心 看房联系人 详情 -->
+        <activity android:name=".ui.PersonContactsDetailsActivity" />
+        <!-- 个人中心 收件人信息 -->
+        <activity android:name=".ui.PersonRecipientsActivity" />
+        <!-- 个人中心 收件人信息 详情 -->
+        <activity android:name=".ui.PersonRecipientsDetailsActivity" />
+        <!-- 个人中心 意见反馈 -->
+        <activity android:name=".ui.PersonFeedbackActivity" />
+        <!-- 个人中心 修改密码 -->
+        <activity android:name=".ui.PersonPasswordActivity" />
+        <!-- 个人中心 解绑手机 -->
+        <activity android:name=".ui.PersonUnbindingMobileActivity" />
+        <!-- 个人中心 绑定邮箱 -->
+        <activity android:name=".ui.PersonBundlingEmailActivity" />
+        <activity android:name=".ui.EntrustBookWebViewActivity" >
+        </activity>
+        <activity android:name=".ui.EntrustEvaluateActivity" >
+        </activity>
+        <activity android:name=".ui.EntrustListActivity" >
+        </activity>
+
+        <!-- 百度地图 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <!-- 设置界面 -->
+        <activity android:name=".ui.SettingActivity">
+        </activity>
+        <!-- Logo界面 -->
+        <activity
+            android:name=".ui.SplashActivity"
+            android:theme="@style/AppThemeFullScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 欢迎界面 -->
+        <activity android:name=".ui.WelcomeActivity"
+                  android:theme="@style/AppThemeFullScreen">
+        </activity>
+
+        <!-- Caution! Do not change this app key. It is only for demo usage. -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="568095f5e0f55aab16001232" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+    </application>
+
+</manifest>

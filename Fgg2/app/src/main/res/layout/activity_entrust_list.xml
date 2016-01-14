@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yunfangdata.fgg.ui.EntrustListActivity">
+
+    <include
+        android:id="@+id/nav_title"
+        layout="@layout/include_head_sub_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/el_top_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/el_top_1_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/blackBB"
+                android:textSize="@dimen/el_text_size"/>
+
+            <View
+                android:id="@+id/el_top_1_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/el_bellow_line"
+                android:layout_alignParentBottom="true"
+                android:background="@color/title_blue"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/el_top_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/el_top_2_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="已完成"
+                android:textColor="@color/blackBB"
+                android:textSize="@dimen/el_text_size"/>
+
+            <View
+                android:id="@+id/el_top_2_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/el_bellow_line"
+                android:layout_alignParentBottom="true"
+                android:background="@color/title_blue"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/el_top_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/el_top_3_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="未受理"
+                android:textColor="@color/blackBB"
+                android:textSize="@dimen/el_text_size"/>
+
+            <View
+                android:id="@+id/el_top_3_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/el_bellow_line"
+                android:layout_alignParentBottom="true"
+                android:background="@color/title_blue"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/el_top_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/el_top_4_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="受理中"
+                android:textColor="@color/blackBB"
+                android:textSize="@dimen/el_text_size"/>
+
+            <View
+                android:id="@+id/el_top_4_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/el_bellow_line"
+                android:layout_alignParentBottom="true"
+                android:background="@color/title_blue"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/el_top_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/el_top_5_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="已撤单"
+                android:textColor="@color/blackBB"
+                android:textSize="@dimen/el_text_size"/>
+
+            <View
+                android:id="@+id/el_top_5_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/el_bellow_line"
+                android:layout_alignParentBottom="true"
+                android:background="@color/title_blue"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/el_time_relativeLayout_start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buy_item_hight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/buy_left_text_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:gravity="center_vertical"
+                android:text="开始时间"
+                android:textColor="@color/black"
+                android:textSize="@dimen/buy_numal_text_size"/>
+
+            <TextView
+                android:id="@+id/el_time_value_start"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:layout_marginRight="@dimen/buy_item_hight"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/buy_numal_text_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/buy_margin_small"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/buy_margin"
+
+                android:src="@mipmap/el_data_pick"/>
+        </LinearLayout>
+
+
+        <View style="@style/rl_line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/el_time_relativeLayout_end"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buy_item_hight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/buy_left_text_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:gravity="center_vertical"
+                android:text="结束时间"
+                android:textColor="@color/black"
+                android:textSize="@dimen/buy_numal_text_size"/>
+
+            <TextView
+                android:id="@+id/el_time_value_end"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:layout_marginRight="@dimen/buy_item_hight"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/buy_numal_text_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/buy_margin_small"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/buy_margin"
+
+                android:src="@mipmap/el_data_pick"/>
+        </LinearLayout>
+        <View style="@style/rl_line"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/el_bt_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:layout_marginRight="@dimen/margin_40"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:background="@drawable/button_selector_bule"
+        android:text="搜索"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        />
+
+    <ListView
+        android:id="@+id/el_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

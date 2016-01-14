@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yunfangdata.fgg.ui.HypocrisyQueryActivity">
+
+    <LinearLayout
+        android:id="@+id/scd_ll_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@color/black20"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buy_item_hight">
+
+
+            <EditText
+                android:id="@+id/hq_number"
+                style="@style/Buy_EditText"
+                android:maxLength="15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/hq_number"
+                android:inputType="number"
+                />
+
+            <ImageView
+
+                android:id="@+id/hq_number_warning"
+                style="@style/Buy_Waning_Img"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_20"
+                android:src="@mipmap/buy_warning"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/black20"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buy_item_hight">
+
+
+            <EditText
+                android:id="@+id/hq_name"
+                style="@style/Buy_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="15"
+                android:hint="@string/hq_name"
+                />
+
+            <ImageView
+                android:id="@+id/hq_name_warning"
+                style="@style/Buy_Waning_Img"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_20"
+                android:src="@mipmap/buy_warning"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/black20"/>
+
+        <Button
+            android:id="@+id/hq_button_query"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_margin="@dimen/margin_20"
+            android:background="@drawable/button_selector_bule"
+            android:text="@string/hq_button_query"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_20"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/hq_instruction1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hq_instruction1"
+                android:textColor="@color/blackBB"
+                android:textSize="@dimen/text_size_14"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_20"
+                android:id="@+id/hq_instruction2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hq_instruction2"
+                android:textColor="@color/blackBB"
+                android:textSize="@dimen/text_size_14"
+                />
+    </LinearLayout>
+
+</LinearLayout>

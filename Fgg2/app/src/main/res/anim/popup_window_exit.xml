@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 从右往左平移-->
+    <translate 
+        android:fromXDelta="20"
+        android:toXDelta="-100%p"
+        android:duration="200"/>
+
+    <!-- 从不半透明到半 -->
+    <alpha
+
+        android:fromAlpha="1.0"
+
+        android:toAlpha="0.3"
+
+        android:duration="200"
+
+        />
+</set>

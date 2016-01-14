@@ -1,0 +1,232 @@
+<resources>
+    <string name="app_name">房估估</string>
+
+
+    <string name="Description">描述</string>
+
+    <string name="person_submit">提      交</string>
+
+    <!-- 消息中心-->
+    <string name="person_message_is_read">标记已读</string>
+    <string name="person_message_del">删除</string>
+    <!-- homeActivity -->
+    <string name="home_city_name">广州</string>
+    <string name="home_heard_text">返回</string>
+    <string name="home_filtrate_house_type">户型</string>
+    <string name="home_filtrate_area">区域</string>
+    <string name="home_filtrate_price">价格</string>
+    <string name="home_filtrate_school">学校</string>
+
+    <string name="price_hint">请输入总价 单位万元</string>
+    <string name="price_hint2">请输入首付 单位万元</string>
+    <string name="confirm">确认</string>
+
+    <string name="map_list">列表</string>
+    <string name="map_location">定位</string>
+
+    <string name="search_hit_text">输入小区名/地址</string>
+    <string name="cancel">取消</string>
+
+    <string name="map_item_view_unit_price">小区均价：</string>
+    <string name="map_item_view_year_on_year">同比：</string>
+    <string name="map_item_view_QOQ">环比：</string>
+    <string name="map_item_view_max_area">可购最大面积：</string>
+    <string name="map_item_view_rent_price">租金均价：</string>
+    <string name="map_item_view_area_unit">m²</string>
+
+
+    <!--房子细节-->
+    <string name="hd_UnitPrice">小区均价:</string>
+    <string name="hd_MonthForRent">环比上月:</string>
+    <string name="hd_YearForPrice">同比去年:</string>
+    <string name="hd_RentPrice">租金均价:</string>
+    <string name="hd_around_name">周边信息</string>
+    <string name="hd_around_school_name">学校:</string>
+    <string name="hd_around_hospital_name">医院:</string>
+    <string name="hd_around_Supermarket_name">超市:</string>
+    <string name="hd_around_bank_name">银行:</string>
+    <string name="hd_around_bus_name">公交:</string>
+    <string name="hd_around_metro_name">地铁:</string>
+    <string name="hd_tips_tv">提示: 请您根据自身需求\"对号入座\",点击相对应的专栏.进行具体的房产估值询价</string>
+    <string name="hd_bt_buy_values">买房估值</string>
+    <string name="hd_bt_sell_values">卖房估值</string>
+    <string name="hd_m_pingfang">元/m²</string>
+    <string name="hd_yuen_month">元/月</string>
+
+    <!--买房估值-->
+    <string name="buy_must">必填</string>
+    <string name="buy_must_base">基本估价条件</string>
+    <string name="buy_enter_name">输入小区名称</string>
+    <string name="buy_residential_name">小区名称:</string>
+    <string name="buy_area">建筑面积:</string>
+    <string name="buy_house_type">居室类型:</string>
+    <string name="buy_choase_input">选填</string>
+    <string name="buy_choaese_input_detial">详细估价条件</string>
+    <string name="buy_build_number">楼栋:</string>
+    <string name="buy_build_number_value">输入楼栋</string>
+    <string name="buy_house_number_value">输入户号</string>
+    <string name="buy_house_number">门牌号:</string>
+    <string name="buy_toward">房屋朝向:</string>
+    <string name="buy_floor_value">请输入所在楼层</string>
+    <string name="buy_floor">所在楼层:</string>
+    <string name="buy_chen">层</string>
+    <string name="buy_totalfloor_value">请输入总楼层数</string>
+    <string name="buy_totalfloor">总楼层数:</string>
+    <string name="buy_year">年</string>
+    <string name="buy_built_time_value">如: 2015</string>
+    <string name="buy_built_time">建成年代:</string>
+    <string name="buy_price_value">如: 1000</string>
+    <string name="buy_price">预购总价:</string>
+    <string name="buy_price_item">万元</string>
+    <string name="buy_bt_valuation">我要估值</string>
+    <string name="buy_readme">请如实填写估值信息,信息越详细结果越准确</string>
+    <string name="buy_area_value">1.00~9998.99</string>
+    <string name="buy_area_unit">平米</string>
+    <string name="buy_loading">估值中...</string>
+
+    <!--卖房估值-->
+    <string name="sale_title">卖房估值</string>
+    <string name="sale_special_factor">特殊因素:</string>
+    <string name="title_activity_schedule">ScheduleActivity</string>
+
+    <string name="modified_password1">请输入原密码</string>
+    <string name="modified_password2">请输入新密码 （8~16位）</string>
+    <string name="modified_password3">请输再次输入新密码</string>
+
+    <!--进度查询-->
+    <string name="scd_button_query">查询</string>
+    <string name="scd_button_query1">正在查询中...</string>
+    <string name="scd_number">请输入12位报告编号</string>
+    <string name="scd_title">进度查询</string>
+    <string name="schedu_number1">报告编号</string>
+    <string name="schedu_number2">的查询结果是:</string>
+    <string name="schedu_number_result">3.业务受理完成</string>
+    <string name="schedu_item_1">1</string>
+    <string name="schedu_item_1_value">委托确认中</string>
+    <string name="schedu_item_2">2</string>
+    <string name="schedu_item_2_value">业务受理中</string>
+    <string name="schedu_item_3">3</string>
+    <string name="schedu_item_3_value">外业勘察中</string>
+    <string name="schedu_item_4">4</string>
+    <string name="schedu_item_4_value">报告撰写中</string>
+    <string name="schedu_item_5">5</string>
+    <string name="schedu_item_5_value">报告审核中</string>
+    <string name="schedu_item_6">6</string>
+    <string name="schedu_item_6_value">已完成</string>
+    <string name="schedu_item_7">7</string>
+    <string name="schedu_item_7_value">发送报告</string>
+    <string name="schedule_title_resurt">进度查询结果</string>
+
+    <!--真伪查询-->
+    <string name="sq_title">真伪查询</string>
+    <string name="hq_number">请输入报告编号</string>
+    <string name="hq_name">请输入委托方名称</string>
+    <string name="hq_button_query">确定</string>
+    <string name="hq_instruction1">*委托方名称请参考报告上的委托方全称及顺序填写，若有两人以上请都填上，并以空格加以分隔。</string>
+    <string name="hq_instruction2">*查询过程中有任何问题，请致电 010-88395867 (个人业务)。</string>
+    <string name="hq_warning_page_value">没有找到对应报告</string>
+    <string name="hq_back">返回</string>
+    <string name="hq_result_reportNum">报告编号:</string>
+    <string name="hq_result_address">项目位置:</string>
+    <string name="hq_result_total_prices">总价:</string>
+    <string name="hq_result_prices">单价:</string>
+    <string name="hq_result_builded_year">建成年代:</string>
+    <string name="hq_result_property">产权性质:</string>
+    <string name="hq_result_use_state">利用现状:</string>
+    <string name="hq_result_phyical_structure">物理结构是否发生变化:</string>
+    <string name="sale_price">预售总价:</string>
+
+    <!--注册登录-->
+    <string name="rl_pass_name">手机号/邮箱/用户名</string>
+    <string name="rl_pass_password">密码</string>
+    <string name="rl_bt_login">登录</string>
+    <string name="rl_forget_password">忘记密码</string>
+    <string name="rl_new_register">新用户注册</string>
+    <string name="rl_sms_register_second_psw">请再次输入密码</string>
+    <string name="rl_sms_register_first_psw">请输入密码</string>
+    <string name="rl_sms_register_verification_phone_get">获取验证码</string>
+    <string name="rl_sms_register_verification_phone">请输入手机验证码</string>
+    <string name="rl_sms_login_register_show">1100</string>
+    <string name="rl_sms_register_verification">请输入验证码</string>
+    <string name="rl_sms_register_name">手机号</string>
+    <string name="rl_sms_register_button">注册</string>
+    <string name="rl_forget_psw_button">保存</string>
+    <string name="rl_title_login">登录</string>
+    <string name="rl_title_register">注册</string>
+    <string name="rl_title_find_psw">找回密码</string>
+    <string name="rl_psw_no_null">密码不能为空!</string>
+    <string name="rl_username_no_null">用户名不能为空!</string>
+    <string name="rl_login_success">登录成功</string>
+    <string name="rl_login_error">账户或者密码错误,请仔细检查</string>
+    <string name="rl_sms_login_verification_phone">请输入手机验证码</string>
+    <string name="rl_sms_login_verification_phone_get">获取验证码</string>
+    <string name="rl_sms_login_verification">请输入验证码</string>
+    <string name="rl_sms_login_name">手机号</string>
+    <string name="rl_pleaes_enter_right_number">请输入正确的手机号码!</string>
+    <string name="rl_password_is_right">密码要求必须同时包含数字和字母,8-16位</string>
+    <string name="eb_bt_enter">进入委托评估</string>
+    <string name="eb_bt_enter_value">请注意: 委托评估需要收取相应的费用</string>
+    <string name="eb_checkBox">已阅读并同意《委托协议书》</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="eb_checkBox2"> 我已阅读并同意《委托协议书》</string>
+    <string name="ee_objective">估价目的</string>
+    <string name="ee_bank">贷款银行</string>
+    <string name="ee_area_value">如100</string>
+    <string name="ee_type_false_house">非住宅</string>
+    <string name="ee_type_true_house">住宅</string>
+    <string name="ee_type">物业类型</string>
+    <string name="ee_location">所在区域</string>
+    <string name="ee_detail_address">详细地址</string>
+    <string name="ee_time">约看时间</string>
+    <string name="ee_time_frame">约看时段</string>
+    <string name="ee_futures">期贷金额</string>
+    <string name="ee_futures_value">如200</string>
+    <string name="ee_futures_value_item">万元</string>
+    <string name="ee_percent">贷款成数</string>
+    <string name="ee_look_house">看房联系人</string>
+    <string name="ee_report">报告收件人</string>
+    <string name="ee_information">资料提供</string>
+    <string name="ee_mark">备注信息</string>
+    <string name="ee_bt_enter">确认委托</string>
+    <string name="ee_title">委托评估</string>
+    <string name="ee_objective_error">请选择评估目的</string>
+    <string name="ee_residential_name_erroe">请输入小区名称</string>
+    <string name="ee_area_warning_ee">建筑面积不能为空,并且应该在\n1.00~9999.00平方米之间</string>
+    <string name="ee_location_warning_ee">请选择所在区域</string>
+    <string name="ee_detail_adress_warning_ee">请填写详细地址</string>
+    <string name="ee_futures_warning_ee">期贷金额不能为空,并且应该在\n1~9999万元之间</string>
+
+    <string name="please_choose">请选择</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="iel_number">评估编号:</string>
+    <string name="iel_item">评估对象:</string>
+    <string name="iel_address">详细地址:</string>
+    <string name="iel_data">评估日期:</string>
+    <string name="iel_state">状态:</string>
+    <string name="iel_bt_reminder">催单</string>
+    <string name="iel_bt_revoke">撤单</string>
+    <string name="iel_bt_modification">修改</string>
+    <string name="ee_detail_address_value2">请输入详细地址</string>
+    <string name="ee_mark_value">有什么需要特别注意的</string>
+    <string name="ee_report_textview1">[默认]</string>
+    <string name="ee_look_house_textview1">[默认]</string>
+    <string name="pbm_bt_binding">绑定邮箱</string>
+    <string name="pbm_ed_email">请输入你要绑定的邮箱</string>
+    <string name="peb_title">绑定邮箱</string>
+    <string name="pu_old_number1">原手机号:</string>
+    <string name="pu_new_number">请输入新手机号码</string>
+    <string name="pu_verification_phone">验证码:</string>
+    <string name="pu_bt_enter">确认</string>
+    <string name="pum_title">解绑手机</string>
+    <string name="vp_tv_intent_home">马上体验</string>
+    <string name="rl_title">登录</string>
+    <string name="eb_title">委托协议书</string>
+    <string name="scd_number_warning">编号的位数为12位</string>
+    <string name="hq_number_warning">报告编号不能为空,且长度为是15位</string>
+    <string name="hq_name_warning">委托方名称不能为空!</string>
+    <string name="buy_residential_name_warning_2">小区名字不能为空,并且请从下拉列表中选择小区名称</string>
+    <string name="buy_not_city">不能获取到当前城市名称,请重新启动软件</string>
+    <string name="buy_totalfloor_e">所在楼层不能高于总楼层数!</string>
+</resources>

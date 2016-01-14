@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.yunfangdata.fgg.fragment.SettingBaseFragment">
+
+    <RelativeLayout
+        android:id="@+id/sb_rl_cache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buy_item_hight"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/button_selector_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:gravity="center_vertical"
+                android:text="清除缓存"
+                android:textColor="@color/black"
+                android:textSize="@dimen/buy_numal_text_size"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sb_tv_cache_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/hd_house_marginLeft"
+            android:layout_marginRight="@dimen/margin_20"
+            android:gravity="center_vertical"
+            android:textColor="@color/gay"
+            android:textSize="@dimen/text_size_14"/>
+
+        <View style="@style/rl_line"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sb_rl_updata"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buy_item_hight"
+        android:background="@drawable/button_selector_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:gravity="center_vertical"
+                android:text="版本更新"
+                android:textColor="@color/black"
+                android:textSize="@dimen/buy_numal_text_size"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/sb_tv_updata_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/hd_house_marginLeft"
+            android:layout_marginRight="@dimen/margin_20"
+            android:gravity="center_vertical"
+            android:textColor="@color/gay"
+            android:textSize="@dimen/text_size_14"/>
+        <View style="@style/rl_line"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sb_rl_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buy_item_hight"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/button_selector_white">
+
+        <View style="@style/rl_line_top"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:gravity="center_vertical"
+                android:text="关于我们"
+                android:textColor="@color/black"
+                android:textSize="@dimen/buy_numal_text_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/buy_margin_small"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/buy_margin"
+                android:src="@mipmap/schedule_arrow"/>
+        </LinearLayout>
+
+        <View style="@style/rl_line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sb_rl_say"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buy_item_hight"
+        android:background="@drawable/button_selector_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:gravity="center_vertical"
+                android:text="免责声明"
+                android:textColor="@color/black"
+                android:textSize="@dimen/buy_numal_text_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/buy_margin_small"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/buy_margin"
+                android:src="@mipmap/schedule_arrow"/>
+        </LinearLayout>
+
+        <View style="@style/rl_line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sb_rl_line_me"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buy_item_hight"
+        android:background="@drawable/button_selector_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/hd_house_marginLeft"
+                android:gravity="center_vertical"
+                android:text="联系我们"
+                android:textColor="@color/black"
+                android:textSize="@dimen/buy_numal_text_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/buy_margin_small"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/buy_margin"
+                android:src="@mipmap/schedule_arrow"/>
+        </LinearLayout>
+
+        <View style="@style/rl_line"/>
+    </RelativeLayout>
+</LinearLayout>

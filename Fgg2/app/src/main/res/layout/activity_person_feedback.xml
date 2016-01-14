@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/nav_title"
+        layout="@layout/include_head_sub_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+    <EditText
+        android:id="@+id/text_edt"
+        android:layout_marginTop="@dimen/Title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        style="@style/Buy_EditText2"
+        android:padding="5dp"
+        android:background="@drawable/juxing_zhijiao_white"
+        app:layout_heightPercent="30%h"/>
+
+    <Button
+        android:id="@+id/submit_bt"
+        android:layout_margin="@dimen/margin_40"
+        android:text="@string/person_submit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="6%h"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Body2"
+        android:background="@drawable/button_selector_bule"/>
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

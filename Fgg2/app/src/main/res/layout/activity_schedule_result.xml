@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.yunfangdata.fgg.ui.ScheduleActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/schedu_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/schedu_number1"
+                    android:textColor="@color/blackBB"
+                    android:textSize="@dimen/text_size_14"
+                    />
+
+                <TextView
+                    android:id="@+id/schedu_number_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/schedu_number_result"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_14"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/schedu_item_1"
+                android:layout_width="@dimen/schedu_item_width"
+                android:layout_height="@dimen/schedu_item_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/schedule_green"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Schedule_nunbum"
+                    android:text="@string/schedu_item_1"/>
+
+                <ImageView
+                    style="@style/Schedule_nunbum_image"/>
+
+                <TextView
+                    style="@style/Schedule_nunbum_value"
+                    android:text="@string/schedu_item_1_value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/schedu_item_2"
+                android:layout_width="@dimen/schedu_item_width"
+                android:layout_height="@dimen/schedu_item_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@color/schedule_green"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Schedule_nunbum"
+                    android:text="@string/schedu_item_2"/>
+
+                <ImageView
+                    style="@style/Schedule_nunbum_image"/>
+
+                <TextView
+                    style="@style/Schedule_nunbum_value"
+                    android:text="@string/schedu_item_2_value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/schedu_item_3"
+                android:layout_width="@dimen/schedu_item_width"
+                android:layout_height="@dimen/schedu_item_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@color/schedule_green"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Schedule_nunbum"
+                    android:text="@string/schedu_item_3"/>
+
+                <ImageView
+                    style="@style/Schedule_nunbum_image"/>
+
+                <TextView
+                    style="@style/Schedule_nunbum_value"
+                    android:text="@string/schedu_item_3_value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/schedu_item_4"
+                android:layout_width="@dimen/schedu_item_width"
+                android:layout_height="@dimen/schedu_item_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@color/schedule_green"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Schedule_nunbum"
+                    android:text="@string/schedu_item_4"/>
+
+                <ImageView
+                    style="@style/Schedule_nunbum_image"/>
+
+                <TextView
+                    style="@style/Schedule_nunbum_value"
+                    android:text="@string/schedu_item_4_value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/schedu_item_5"
+                android:layout_width="@dimen/schedu_item_width"
+                android:layout_height="@dimen/schedu_item_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@color/schedule_green"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Schedule_nunbum"
+                    android:text="@string/schedu_item_5"/>
+
+                <ImageView
+                    style="@style/Schedule_nunbum_image"/>
+
+                <TextView
+                    style="@style/Schedule_nunbum_value"
+                    android:text="@string/schedu_item_5_value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/schedu_item_6"
+                android:layout_width="@dimen/schedu_item_width"
+                android:layout_height="@dimen/schedu_item_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@color/schedule_green"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Schedule_nunbum"
+                    android:text="@string/schedu_item_6"/>
+
+                <ImageView
+                    style="@style/Schedule_nunbum_image"/>
+
+                <TextView
+                    style="@style/Schedule_nunbum_value"
+                    android:text="@string/schedu_item_6_value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/schedu_item_7"
+                android:layout_width="@dimen/schedu_item_width"
+                android:layout_height="@dimen/schedu_item_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@color/schedule_green"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Schedule_nunbum"
+                    android:text="@string/schedu_item_7"/>
+
+                <ImageView
+                    style="@style/Schedule_nunbum_image"/>
+
+                <TextView
+                    style="@style/Schedule_nunbum_value"
+                    android:text="@string/schedu_item_7_value"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

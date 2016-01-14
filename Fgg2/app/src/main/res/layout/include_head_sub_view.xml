@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    tools:context=".HomeActivity"
+    android:background="@drawable/line_top_bg" >
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent" >
+
+        <ImageButton
+            android:id="@+id/nav_btn_back"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/nav_back_selector"
+             />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="10"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/nav_txt_title"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:text="房估估"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/nav_txt_op"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="@drawable/editview_selector_white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

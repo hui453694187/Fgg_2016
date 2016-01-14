@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yunfangdata.fgg.ui.EntrustListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:text="@string/iel_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18"/>
+
+            <TextView
+                android:id="@+id/iel_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:text="110"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_18"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:text="@string/iel_item"
+                android:textColor="@color/black"
+                android:textSize="@dimen/buy_numal_text_size"/>
+
+            <TextView
+                android:id="@+id/iel_item"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:text="110"
+                android:textColor="@color/blackBB"
+                android:textSize="@dimen/buy_numal_text_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:text="@string/iel_address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/buy_numal_text_size"/>
+
+            <TextView
+                android:id="@+id/iel_address"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:text="110"
+                android:textColor="@color/blackBB"
+                android:textSize="@dimen/buy_numal_text_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:text="@string/iel_data"
+                android:textColor="@color/black"
+                android:textSize="@dimen/buy_numal_text_size"/>
+
+            <TextView
+                android:id="@+id/iel_data"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:text="110"
+                android:textColor="@color/blackBB"
+                android:textSize="@dimen/buy_numal_text_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:text="@string/iel_state"
+                android:textColor="@color/black"
+                android:textSize="@dimen/buy_numal_text_size"/>
+
+            <TextView
+                android:id="@+id/iel_state"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:text="110"
+                android:textColor="@color/blackBB"
+                android:textSize="@dimen/buy_numal_text_size"/>
+        </LinearLayout>
+    </LinearLayout>
+        <View
+            style="@style/rl_line"
+            android:layout_marginTop="@dimen/margin_10"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_30"
+            android:orientation="horizontal">s
+
+            <TextView
+                android:id="@+id/iel_bt_reminder"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/iel_bt_reminder"
+                android:textColor="@color/blackBB"
+                android:textSize="@dimen/el_text_size"/>
+
+            <View
+                android:layout_width="1sp"
+                android:layout_height="match_parent"
+                android:background="@color/black20"/>
+
+            <TextView
+                android:id="@+id/iel_bt_revoke"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/iel_bt_revoke"
+                android:textColor="@color/blackBB"
+                android:textSize="@dimen/el_text_size"/>
+
+            <View
+                android:layout_width="1sp"
+                android:layout_height="match_parent"
+                android:background="@color/black20"/>
+
+            <TextView
+                android:id="@+id/iel_bt_modification"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/iel_bt_modification"
+                android:textColor="@color/title_blue"
+                android:textSize="@dimen/el_text_size"/>
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%h"
+        android:background="@drawable/line_top_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:gravity="center"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Body2" />
+        <EditText
+            android:id="@+id/search_edt"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:hint="@string/search_hit_text"
+            android:paddingLeft="@dimen/drawable_padding"
+            android:textColorHint="@color/gay"
+            android:background="@drawable/juxing_yuangjiao_edt"
+            android:inputType="text"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_weight="2"/>
+
+        <ImageView
+            android:id="@+id/clear_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+
+        <TextView
+            android:id="@+id/city_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/home_city_name"
+            android:textSize="@dimen/Body2" />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="4dp"
+            app:layout_heightPercent="50%h"
+            app:layout_marginTopPercent="4%h"
+            android:layout_marginRight="@dimen/drawable_padding"
+            android:src="@drawable/down_write"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <ListView
+        android:id="@+id/search_garden_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="92%h">
+
+    </ListView>
+
+</com.zhy.android.percent.support.PercentLinearLayout>
