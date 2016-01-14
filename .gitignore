@@ -53,3 +53,8 @@ proguard/
 #忽略外采项目
 Eias/
 ssh_key/
+
+#项目里面的.git
+Fgg2/.git/
+Fgg2/.gitignore
+Fgg2/README.md
